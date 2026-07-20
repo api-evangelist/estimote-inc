@@ -1,0 +1,32 @@
+generated: '2026-07-19'
+method: searched
+source: https://developer.estimote.com/cloud/oauth/ and https://cloud.estimote.com/docs/
+docs: https://developer.estimote.com/cloud/oauth/
+summary:
+  types: [oauth2, http, apiKey]
+  api_key_in: [header]
+  oauth2_flows: [authorizationCode]
+  notes: >-
+    Estimote Cloud REST API accepts OAuth 2.0 (authorization code grant, server-side apps)
+    with a Bearer access token, or an App ID + App Token credential pair passed as an HTTP
+    Basic Authorization header for direct API access.
+schemes:
+- name: OAuth2
+  type: oauth2
+  flow: authorizationCode
+  authorizationUrl: https://cloud.estimote.com/v1/oauth2/authorize
+  tokenUrl: https://cloud.estimote.com/v1/oauth2/access_token
+  token_usage: "Authorization: Bearer <token>"
+  status: private-beta
+  note: >-
+    Authorization Code grant only, intended for server-side applications where the client
+    secret can be protected. Not suitable for mobile or JavaScript apps. Credentials issued
+    on request during private beta.
+  sources: [https://developer.estimote.com/cloud/oauth/]
+- name: AppToken
+  type: http
+  scheme: basic
+  description: >-
+    App ID and App Token credential pair (created in Estimote Cloud) passed via HTTP Basic
+    Authorization header to authenticate REST API requests.
+  sources: [https://cloud.estimote.com/docs/]
