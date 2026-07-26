@@ -1,0 +1,45 @@
+# Estimote Inc
+
+> Estimote, Inc. (founded 2012, New York City & Kraków) builds location and proximity
+> sensors using Bluetooth Low Energy, Ultra Wideband (UWB), and LTE-M / NB-IoT. Its
+> UWB Tags are programmable in JavaScript and push events to the cloud over LTE. The
+> Estimote Cloud RESTful API manages device fleets, attachments, and LTE Beacon events,
+> secured with OAuth 2.0.
+
+## APIs
+
+- [Estimote Cloud API](https://cloud.estimote.com/docs/): REST API for devices, attachments, fleet settings, and LTE Beacon event history. Base URL https://cloud.estimote.com/v1
+
+## Documentation
+
+- [Estimote Developer Portal](https://developer.estimote.com/): Intro to Estimote APIs, SDKs, and products
+- [Cloud API Reference](https://cloud.estimote.com/docs/): Full REST API method reference
+- [OAuth 2.0 Authorization](https://developer.estimote.com/cloud/oauth/): Authorization code flow, token endpoint, Bearer usage
+- [LTE Beacon: Cloud code & APIs](https://developer.estimote.com/lte-beacon/cloud-code-and-apis/): Serverless cloud code and event access
+- [Getting Started (LTE Beacon quick start)](https://developer.estimote.com/lte-beacon/quick-start/)
+
+## SDKs
+
+- [Estimote SDK for iOS (next gen)](https://github.com/Estimote/estimote-sdk-ios)
+- [Estimote Positioning SDK for iOS](https://github.com/Estimote/estimote-positioning-sdk-ios)
+- [iOS UWB SDK](https://github.com/Estimote/iOS-Estimote-UWB-SDK)
+- [Android UWB SDK](https://github.com/Estimote/Android-Estimote-UWB-SDK)
+- [Android Fleet Management SDK](https://github.com/Estimote/Android-Fleet-Management-SDK)
+- [EstimoteSDK CocoaPod](https://cocoapods.org/pods/EstimoteSDK)
+- [GitHub organization](https://github.com/Estimote)
+
+## Repo artifacts
+
+- [Authentication profile](authentication/estimote-inc-authentication.yml)
+- [Packages / SDKs](packages/estimote-inc-packages.yml)
+- [API conventions](conventions/estimote-inc-conventions.yml)
+- [Conformance](conformance/estimote-inc-conformance.yml)
+- [Lifecycle](lifecycle/estimote-inc-lifecycle.yml)
+- [LTE events & webhooks](asyncapi/estimote-inc-lte-events-webhooks.yml)
+- [Domain security](security/estimote-inc-domain-security.yml)
+
+## Support
+
+- [Community Help Center](https://community.estimote.com/hc/en-us)
+- [Developer Forums](https://forums.estimote.com/)
+- [Blog](https://blog.estimote.com/)

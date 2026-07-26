@@ -1,0 +1,19 @@
+generated: '2026-07-19'
+method: searched
+source: https://cloud.estimote.com/docs/ and https://github.com/Estimote
+versioning:
+  scheme: uri-path
+  current: v1
+  docs: https://cloud.estimote.com/docs/
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: >-
+    No formal API deprecation policy or RFC 8594 Sunset header support published. Several
+    legacy SDK repositories (iOS-Proximity-SDK, Android-Proximity-SDK, Indoor and Mirror
+    SDKs) are archived on GitHub in favor of the next-generation estimote-sdk-ios and UWB
+    SDKs, but this is SDK lifecycle, not a versioned API deprecation policy.
+sla:
+  url: null
+status_page: null
+deprecated_operations: []

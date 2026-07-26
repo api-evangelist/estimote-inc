@@ -1,0 +1,32 @@
+generated: '2026-07-19'
+method: searched
+source: https://developer.estimote.com/cloud/oauth/ and https://cloud.estimote.com/docs/
+api: Estimote Cloud API
+base_url: https://cloud.estimote.com/v1
+authentication:
+  style: oauth2-bearer-or-app-token
+  detail: OAuth 2.0 authorization code (Bearer token) or App ID + App Token HTTP Basic
+  ref: authentication/estimote-inc-authentication.yml
+media_type: application/json
+versioning:
+  scheme: uri-path
+  current: v1
+  example: https://cloud.estimote.com/v1/...
+  ref: lifecycle/estimote-inc-lifecycle.yml
+pagination:
+  documented: false
+  note: Not documented in the public API reference.
+idempotency:
+  documented: false
+  note: >-
+    No documented idempotency-key mechanism in the Estimote Cloud REST API. No Idempotency
+    pointer emitted (would be fabrication).
+error_handling:
+  style: http-status-codes
+  format: json
+  note: Standard HTTP status codes with JSON bodies; no RFC 9457 problem+json advertised.
+events:
+  surface: >-
+    LTE Beacon / UWB Tag events are retrievable via the Cloud REST API (device event history)
+    and can be pushed to your own endpoint from serverless cloud code.
+  ref: asyncapi/estimote-inc-lte-events-webhooks.yml

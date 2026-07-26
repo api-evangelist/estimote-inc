@@ -1,0 +1,70 @@
+generated: '2026-07-19'
+method: searched
+source: https://github.com/Estimote and https://cocoapods.org/pods/EstimoteSDK
+packages:
+- language: swift
+  registry: github
+  name: estimote-sdk-ios
+  url: https://github.com/Estimote/estimote-sdk-ios
+  install: "Swift Package Manager: add https://github.com/Estimote/estimote-sdk-ios"
+  official: true
+  note: Estimote SDK for iOS (next generation) — BLE, Bluetooth beacons, UWB, nearby interaction
+- language: swift
+  registry: github
+  name: estimote-positioning-sdk-ios
+  url: https://github.com/Estimote/estimote-positioning-sdk-ios
+  install: "Swift Package Manager: add https://github.com/Estimote/estimote-positioning-sdk-ios"
+  official: true
+  note: Estimote Positioning SDK for iOS (next generation)
+- language: cpp
+  registry: github
+  name: iOS-Estimote-UWB-SDK
+  url: https://github.com/Estimote/iOS-Estimote-UWB-SDK
+  install: "Swift Package Manager / CocoaPods: iOS SDK and demo app for Estimote UWB Beacons"
+  official: true
+- language: kotlin
+  registry: github
+  name: Android-Estimote-UWB-SDK
+  url: https://github.com/Estimote/Android-Estimote-UWB-SDK
+  install: "Gradle: implementation from https://github.com/Estimote/Android-Estimote-UWB-SDK"
+  official: true
+  note: Android SDK and demo app for Estimote UWB Beacons
+- language: java
+  registry: github
+  name: Android-Fleet-Management-SDK
+  url: https://github.com/Estimote/Android-Fleet-Management-SDK
+  install: "Gradle: implementation 'com.estimote:...' — Estimote Fleet Management SDK for Android"
+  official: true
+- language: objective-c
+  registry: cocoapods
+  name: EstimoteSDK
+  url: https://cocoapods.org/pods/EstimoteSDK
+  install: pod 'EstimoteSDK'
+  official: true
+  note: Original iOS SDK pod published by Estimote, Inc. (source github.com/Estimote/iOS-SDK)
+- language: objective-c
+  registry: github
+  name: iOS-Proximity-SDK
+  url: https://github.com/Estimote/iOS-Proximity-SDK
+  install: "CocoaPods: pod 'EstimoteProximitySDK'"
+  official: true
+  status: archived
+- language: kotlin
+  registry: github
+  name: Android-Proximity-SDK
+  url: https://github.com/Estimote/Android-Proximity-SDK
+  install: "Gradle: implementation from Estimote Maven repository"
+  official: true
+  status: archived
+- language: javascript
+  registry: github
+  name: react-native-proximity
+  url: https://github.com/Estimote/react-native-proximity
+  install: "React Native wrapper for Estimote Proximity"
+  official: true
+- language: csharp
+  registry: github
+  name: Xamarin-Bindings
+  url: https://github.com/Estimote/Xamarin-Bindings
+  install: "Xamarin bindings for the Estimote SDKs"
+  official: true

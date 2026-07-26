@@ -1,0 +1,29 @@
+generated: '2026-07-19'
+method: searched
+source: >-
+  https://developer.estimote.com/lte-beacon/cloud-code-and-apis/ and
+  https://developer.estimote.com/lte-beacon/syncing-with-cloud/
+spec_type: Webhooks
+type: Webhooks
+summary: >-
+  Estimote does not publish an AsyncAPI document. Its event surface is delivered two ways:
+  (1) LTE Beacon / UWB Tag event history is retrievable from Estimote Cloud via the RESTful
+  API (getDeviceEvents), and (2) serverless "cloud code" (executed as an AWS Lambda in
+  Estimote Cloud) can be programmed in JavaScript to push structured events to your own
+  HTTPS endpoint in real time — an event-forwarding / webhook-style delivery.
+event_surface:
+- name: LTE Beacon device events
+  delivery: pull
+  mechanism: Estimote Cloud RESTful API device event history
+  reference: https://cloud.estimote.com/docs/#api-LTE-getDeviceEvents
+- name: Cloud code event forwarding
+  delivery: push
+  mechanism: >-
+    JavaScript cloud code (serverless Lambda) forwards device events to a customer endpoint
+    via HTTP POST with a Bearer Authorization header (cloud.enqueue + sync.now on-device,
+    then cloud code superagent.post to your endpoint).
+  reference: https://developer.estimote.com/lte-beacon/cloud-code-and-apis/
+- name: User messages
+  delivery: push
+  mechanism: Estimote Cloud user messages REST API enqueues messages to devices.
+  reference: https://cloud.estimote.com/docs/

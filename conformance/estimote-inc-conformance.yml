@@ -1,0 +1,18 @@
+generated: '2026-07-19'
+method: searched
+source: https://developer.estimote.com/cloud/oauth/ and https://cloud.estimote.com/docs/
+standards:
+- id: oauth2
+  conforms: true
+  evidence: Estimote Cloud documents an OAuth 2.0 authorization code flow (authorize + access_token endpoints, Bearer tokens).
+- id: oauth2-authorization-code
+  conforms: true
+  evidence: https://developer.estimote.com/cloud/oauth/ documents the authorization code grant.
+- id: rest-json
+  conforms: true
+  evidence: Cloud API responses are JSON over HTTPS.
+- id: oidc
+  conforms: false
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: No application/problem+json advertised in the API reference.

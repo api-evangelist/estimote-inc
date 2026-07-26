@@ -1,0 +1,26 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of Estimote hosts
+note: >-
+  No valid /.well-known discovery documents were served. estimote.com/.well-known/security.txt
+  returns HTTP 200 but the body is the marketing homepage (soft-404, not a valid RFC 9116
+  security.txt), so it is not recorded as a document. No WellKnown/SecurityTxt pointer emitted.
+hosts:
+- host: https://cloud.estimote.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+- host: https://estimote.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    valid: false
+    reason: soft-404 — serves marketing homepage HTML, not a security.txt
+- host: https://developer.estimote.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
