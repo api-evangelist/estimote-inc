@@ -3,19 +3,13 @@
   "feeds": [
     {
       "source": "https://forums.estimote.com/posts.rss",
-      "feed_url": "https://forums.estimote.com/posts.rss",
-      "title": "",
-      "saved": 0,
-      "method": "feed"
+      "error": "URLError"
     },
     {
       "source": "https://forums.estimote.com/",
-      "feed_url": "https://forums.estimote.com/posts.rss",
-      "title": "",
-      "saved": 0,
-      "method": "discovered"
+      "error": "URLError"
     }
   ],
   "post_count": 29,
-  "fetched": "2026-07-25T15:00:33Z"
+  "fetched": "2026-08-01T15:49:00Z"
 }
